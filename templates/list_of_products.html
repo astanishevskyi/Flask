@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>List of products</title>
+</head>
+
+<body>
+
+  <h1>List of products</h1>
+  {% for elem in values %}
+  <a href="list_of_products_detail/{{ elem['name'] }}"><p>{{ elem['name'] }}</p></a>
+  {% endfor %}
+
+
+</body>
+</html>

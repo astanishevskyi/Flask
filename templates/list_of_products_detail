@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>List of products</title>
+</head>
+
+<body>
+
+  <h1>Detail info</h1>
+  <p>Name: {{ footballer['name'] }}</p>
+  <p>Position: {{ footballer['position'] }}</p>
+  <p>Age: {{ footballer['age'] }}</p>
+
+
+
+</body>
+</html>
