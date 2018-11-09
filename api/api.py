@@ -1,4 +1,4 @@
-from flask import json, request, jsonify, Blueprint
+from flask import request, jsonify, Blueprint
 from database.db import FootballTable, football_schema, footballs_schema, db
 
 

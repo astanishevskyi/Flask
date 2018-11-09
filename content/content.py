@@ -1,5 +1,5 @@
 from flask import render_template, Blueprint
-from database.db import FootballTable, football_schema, footballs_schema
+from database.db import FootballTable
 
 content = Blueprint('content', __name__, static_folder='./static', template_folder='./template')
 

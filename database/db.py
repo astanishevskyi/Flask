@@ -28,13 +28,13 @@ footballs_schema = Football_schema(many=True)
 
 class UserTable(db.Model):
     __tablename__ = 'users'
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     username = db.Column(db.String)
     age = db.Column(db.Integer)
     email = db.Column(db.String)
     password = db.Column(db.String)
 
-    def __init__(self, username, age,email, password):
+    def __init__(self, username, age, email, password):
         self.username = username
         self.age = age
         self.email = email

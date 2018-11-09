@@ -1,5 +1,5 @@
 from datetime import timedelta
-from flask import Flask, render_template, request, redirect, session
+from flask import Flask, render_template
 from content.content import content
 from content.registration import Registration
 from database.db import db
@@ -20,5 +20,7 @@ db.init_app(app)
 def error_handler(e):
     return render_template('404.html'), 404
 
+
 if __name__ == '__main__':
     app.run()
+
