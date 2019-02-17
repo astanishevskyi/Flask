@@ -3,6 +3,7 @@ from database.db import UserTable, db
 
 Registration = Blueprint('registration', __name__, static_folder='./static', template_folder='./template')
 
+
 @Registration.route('/registration', methods=['GET', 'POST'])
 def registration():
     if request.method == 'POST':
@@ -37,7 +38,6 @@ def registration():
             db.session.commit()
             return redirect('login')
         flash(error)
-
 
         session['email'] = request.form['email']
         session['password'] = request.form['password']

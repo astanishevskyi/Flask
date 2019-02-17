@@ -18,9 +18,11 @@ class FootballTable(db.Model):
         self.position = position
         self.age = age
 
+
 class Football_schema(ma.Schema):
     class Meta():
         fields = ('id', 'name', 'position', 'age')
+
 
 football_schema = Football_schema()
 footballs_schema = Football_schema(many=True)
@@ -42,7 +44,8 @@ class UserTable(db.Model):
 
 
 class UserSchema(ma.Schema):
-    class Meta():
+    class Meta:
         fields = ('id', 'username', 'age', 'email', 'password')
+
 
 user_schema = UserSchema()

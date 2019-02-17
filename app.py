@@ -16,6 +16,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://andrij:a@localhost:5432/an
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
+
 @content.errorhandler(404)
 def error_handler(e):
     return render_template('404.html'), 404
